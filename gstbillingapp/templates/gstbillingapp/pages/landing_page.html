@@ -1,0 +1,68 @@
+{% extends "gstbillingapp/base.html" %}
+
+{% load static %}
+
+{% block title %}
+BillMate - Simplest GST Invoicing | Inventory Management | Book Keeping
+{% endblock %}
+
+{% block metatags %}
+<meta name="description" content="Create GST invoices for free. Manage inventory and track balances easily with DjangoGST.">
+<meta name="keywords" content="DjangoGST, GST invoicing, inventory management, bookkeeping">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Your Name">
+<link rel="canonical" href="https://billgst.in/">
+<meta property="og:title" content="DjangoGST - Simplest GST Invoicing | Inventory Management | Book Keeping">
+<meta property="og:description" content="Create GST invoices for free. Manage inventory and track balances easily with DjangoGST.">
+<meta property="og:url" content="https://billgst.in/">
+<meta property="og:image" content="{% static "gstbillingapp/images/screenshot_interface.png" %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1 class="display-3">BillMate</h1>
+        <h2 class="display-6">Simplest <b>GST Invoicing</b> App</h2>
+        <p class="lead">Easily create invoices, manage inventory, and keep track of balances.</p>
+        <a href="{% url 'invoice_create' %}" class="btn btn-primary btn-lg">Create Invoice</a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">Simple Interface</h4>
+                    <img src="{% static "gstbillingapp/images/screenshot_interface.png" %}" class="card-img-top" alt="Simple Interface">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">Customer and Product Search</h4>
+                    <img src="{% static "gstbillingapp/images/screenshot_search.png" %}" class="card-img-top" alt="Customer and Product Search">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">Manage Books and Balances</h4>
+                    <img src="{% static "gstbillingapp/images/screenshot_books.png" %}" class="card-img-top" alt="Manage Books and Balances">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">Easy Inventory Management</h4>
+                    <img src="{% static "gstbillingapp/images/screenshot_inventory.png" %}" class="card-img-top" alt="Easy Inventory Management">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

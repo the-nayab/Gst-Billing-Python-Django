@@ -1,0 +1,260 @@
+/* Main Styles */
+input.form-control {
+    border-radius: 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Login Page Styles */
+#login-card {
+    margin-top: 5em;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 30px;
+    text-align: center; /* Center align card body contents */
+}
+
+
+/* .form-group.text-center {
+    text-align: left;
+
+} */
+
+.card-b {
+    padding: 30px;
+    text-align: left; /* Center align card body contents */
+}
+
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Center align card title */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Center align form inputs */
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    text-align: center; /* Center align form input text */
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.btn-primary {
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 18px;
+}
+
+.custom-btn.btn-primary {
+    border-radius: 25px;
+    padding: 7px 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff; /* Adding text color to ensure visibility */
+    margin: 7px 7px;
+}
+
+
+/* Create Invoice Page Styles */
+#invoice-form {
+    margin-top: 2em;
+}
+
+#invoice-form table {
+    margin-bottom: 2em;
+}
+
+#invoice-form th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+}
+
+#invoice-form td {
+    text-align: center;
+}
+
+#invoice-form .form-control {
+    text-align: center;
+}
+
+#invoice-form .btn-primary {
+    margin-top: 1em;
+}
+
+#invoice-form #invoice-form-addrow {
+    margin-right: 1em;
+}
+
+/* Add more styles as needed */
+
+/*Invoice Page *******************************************/
+
+#invoice-form input{
+    font-size: 0.9em;
+    color: black;
+}
+
+#invoice-form-items-table {
+    font-size: 0.8em;
+}
+
+/* input.form-control[type=number] {
+    -moz-appearance: none;
+    -webkit-appearance: textfield;
+} */
+input.form-control[type=number] {
+    -moz-appearance: none;
+    -webkit-appearance: textfield;
+    appearance: textfield; /* Standard property */
+}
+
+
+.table-bordered td.form-input-td {
+    padding: 0;
+    vertical-align: middle;
+}
+
+.table-bordered td, .table-bordered th {
+    padding: 0.25em;
+}
+
+.table-bordered tbody td, .table-bordered tbody th, .table-bordered thead th, .table-bordered thead td {
+    background: #f9f9f9;
+}
+
+.two-col-form td, .two-col-form th { 
+    width: 25%;
+}
+
+#customer_search_bar, #product_search_bar {
+    display: none;
+    background: #f9f9f9;
+    width: 20em;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: 0em 0em 1em #111;
+    padding: 0.2em;
+}
+
+.customer-search-result, .product-search-result {
+    padding: 0.2em;
+    margin: 0.4em;
+    border-bottom: 0.16em solid #b9b9b9;
+    cursor: pointer;
+}
+
+.customer-search-result:hover, .product-search-result:hover {
+    background: #b9b9b9;
+}
+
+[readonly] {
+   caret-color: transparent;
+   transition: none;
+   border: none;
+}
+
+[readonly]:focus {
+   caret-color: transparent;
+   box-shadow: none;
+   border: none;
+}
+
+.table-invoice td, .table-invoice th {
+    border: solid #dee2e6 1px;
+}
+
+.table-invoice td, .table-invoice th {
+    padding: .25rem;
+}
+
+#table-invoice-total-row {
+    border-top: 2px solid #939393;
+    background: white;
+}
+
+#invoice-grand-total-table td {
+    font-weight: bold;
+    padding: .25rem;
+}
+
+#invoice-signature-text-row {
+    border-top: 2px solid;
+}
+
+#invoice-signature-row {
+    border-bottom: 2px solid;
+    height: 4em;
+}
+
+/*Customer and Product Page ************************/
+
+#add_customer_btn, #add_product_btn {
+    float: right;
+}
+
+/* Inventory Page */
+#inventory-table tr :hover {
+    cursor: pointer;
+}
+
+#book-table tr :hover {
+    cursor: pointer;
+}
+
+#invoice_profile_data {
+    white-space: pre-line;
+}
+
+/* Print invoice page ************************************/
+
+@page
+{
+    size: auto;   /* auto is the initial value */ 
+    /* this affects the margin in the printer settings */ 
+    margin: 5mm 5mm 5mm 5mm;  
+}
+
+
+
+/* Add this CSS to center align the form-group */
+
+
+/* Add this CSS to align the form-group in order */
+/* .form-group.text-center label,
+.form-group.text-center .input-group {
+    display: inline-block;
+    vertical-align: middle;
+} */

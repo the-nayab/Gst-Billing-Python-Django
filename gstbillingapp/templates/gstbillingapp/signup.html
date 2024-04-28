@@ -1,0 +1,92 @@
+{% extends "gstbillingapp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-sm border-primary rounded-lg">
+        <div class="card-header bg-primary text-white">
+          <h2 class="mb-0">Sign Up</h2>
+        </div>
+        <div class="card-body py-4">
+          <form method="POST">
+            {% csrf_token %}
+
+            <div class="form-group row mb-3">
+              <label for="username" class="col-sm-4 col-form-label text-md-right">Username:</label>
+              <div class="col-sm-8">
+                {{ signup_form.username }}
+                
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="password1" class="col-sm-4 col-form-label text-md-right">Password:</label>
+              <div class="col-sm-8">
+                {{ signup_form.password1 }}
+                
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="password2" class="col-sm-4 col-form-label text-md-right">Confirm Password:</label>
+              <div class="col-sm-8">
+                {{ signup_form.password2 }}
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="form-group row mb-3">
+              <label for="business_title" class="col-sm-4 col-form-label text-md-right">Business Name:</label>
+              <div class="col-sm-8">
+                {{ profile_edit_form.business_title }}
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="business_address" class="col-sm-4 col-form-label text-md-right">Address:</label>
+              <div class="col-sm-8">
+                {{ profile_edit_form.business_address }}
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="business_email" class="col-sm-4 col-form-label text-md-right">Email:</label>
+              <div class="col-sm-8">
+                {{ profile_edit_form.business_email }}
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="business_phone" class="col-sm-4 col-form-label text-md-right">Phone:</label>
+              <div class="col-sm-8">
+                {{ profile_edit_form.business_phone }}
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="business_gst" class="col-sm-4 col-form-label text-md-right">GST:</label>
+              <div class="col-sm-8">
+                {{ profile_edit_form.business_gst }}
+              </div>
+            </div>
+
+            <div class="form-group row mb-0">
+              <div class="col-md-8 offset-md-4">
+                <button type="submit" class="btn btn-primary px-4 py-2">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
